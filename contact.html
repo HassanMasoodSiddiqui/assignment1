@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Contact Us</title>
+        <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="../css/contact.css">
+    </head>
+    <body>
+        <div class="container">
+            <!-- NavBar -->
+            <div class='nav-wrapper'>
+                <div class="left-side">
+                    <div class='logo'>
+                        <a href="index.html"><b>HomeStars</b></a>
+                    </div>
+                </div>    
+                <div class="right-side">
+                    <div class="nav-link-wrapper">
+                        <a href='jhome.html'>Join HomeStar</a>
+                    </div>
+                    <div class="nav-link-wrapper">
+                        <a href='writereview.html'>Write Review</a>
+                    </div>
+                    <div class="nav-link-wrapper">
+                        <a href='login.html'>Login</a>
+                    </div>
+                    <div class="nav-link-wrapper">
+                        <a href='signup.html'>Sign Up</a>
+                    </div>
+               </div>     
+            </div>
+            <!-- Body Content -->
+            <div class="body-content">
+                <div class="box">
+                    <div class="card">
+                        <h1>Contact Us</h1>
+                        <h2>1-877-488-0312</h2>
+                        <p> Our team is ready to assist you. Reach out to one of our teams below.</p>
+                    </div>
+                    <form>
+                      <div class="info">
+                        <div class="line-one">
+                            <input type="text" name="" placeholder="First Name">
+                            <input type="text" name="" placeholder="Last Name">
+                          </div>
+                            <div class="company-name">
+                                <input type="text" name="" placeholder="Company Name"><br/>
+                            </div>
+                            <div class="line-three">
+                                <input type="text" name="" placeholder="Phone">
+                                <input type="text" name="" placeholder="Email"><br/>
+                            </div>
+                            <div class="text-area">
+                                <textarea name="" id="" cols="50" rows="10" placeholder="Enter Message"></textarea>
+                            </div>
+                            <div class="send">
+                                <input type="submit" name="" value="Send Message">
+                            </div>
+                      </div>
+                    </form>
+                    <div class="bottom-text">
+                        
+                    <p><i>*Our team is available Monday - Friday from 9 am to 5 pm EST</i></p>
+                    </div>
+                </div>
+            </div>
+        <!-- Bottom Bar -->
+            <div class="bottom-bar">
+                <div class="bottom-wrapper">
+                        <div class="bottom-link-wrapper">
+                            <a href="readme.html">Read Me</a>
+                        </div>
+                        <div class="bottom-link-wrapper">
+                            <a href="valid.html">Validation</a>
+                        </div>
+                    <div class="bottom-link-wrapper">
+                        <a href="newsletter.html">News Letter </a>
+                    </div>
+                    <div class="bottom-link-wrapper">
+                        <a href="contact.html">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Chat Box -->
+            <section class="contain">
+                <button class="open-button" onclick="openform()">Chat</button>
+                <div class="chat-popup" id="myform">
+                    <form action="" class="form-container">
+                        <h1 style="font-size: large; text-align: center;">Chat</h1>
+                        <label for="msg"><b>Message</b></label>
+                        <textarea placeholder="Type message here.." name="msg" required id="" cols="1" rows="10"></textarea>
+                        <button type="submit" class="btn">Send</button>
+                        <button type="button" class="btn-cancel" onclick="closeform()">Close</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </body>
+    <!-- chat script -->
+    <script>
+        function openform(){
+            document.getElementById("myform").style.display="block";
+        }
+        function closeform(){
+            document.getElementById("myform").style.display="none";
+        }
+    </script>
+</html>

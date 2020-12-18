@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Review</title>
+        <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="../css/readme.css">
+    </head>
+    <body>
+        <div class="container">
+            <!-- NavBar -->
+            <div class='nav-wrapper'>
+                <div class="left-side">
+                    <div class='logo'>
+                        <a href="index.html"><b>HomeStars</b></a>
+                    </div>
+                </div>    
+                <div class="right-side">
+                    <div class="nav-link-wrapper">
+                        <a href='jhome.html'>Join HomeStar</a>
+                    </div>
+                    <div class="nav-link-wrapper">
+                        <a href='writereview.html'>Write Review</a>
+                    </div>
+                    <div class="nav-link-wrapper">
+                        <a href='login.html'>Login</a>
+                    </div>
+                    <div class="nav-link-wrapper">
+                        <a href='signup.html'>Sign Up</a>
+                    </div>
+               </div>     
+            </div>
+        <!-- Body Content -->
+        <div class="box">
+            <h1>Read me</h1>
+            <p>The deployment of this website was done using netlify. Netlify is a simple to use web hosting service which is free to use for static webpages i.e. webpages that only utilize HTML, CSS and javascript without using any database structure. 
+                Netlify makes the task of hosting the website really simple as all the steps you have to take are as easy as:
+                <ol>
+                    <li> Creating an account on netlify</li>
+                    <li> After navigating to the deploy screen you just drag and drop your website folder there making sure the ‘index.html’ file is present inside the root directory </li>
+                    <li> And that’s it netlify generates a random URL for your site and gives it to you which you can then use to access your site on the internet</li>
+                </ol> 
+                If you already own a custom domain you can hook it up to your site too other than that netlify also provides security to your site by adding https using SSL certificate 
+                </p>
+        </div>
+        
+      
+
+        <!-- Bottom Bar -->
+            <div class="bottom-bar">
+                <div class="bottom-wrapper">
+                    <div class="bottom-link-wrapper">
+                        <a href="readme.html">Read Me</a>
+                    </div>
+                    <div class="bottom-link-wrapper">
+                        <a href="valid.html">Validation</a>
+                    </div>
+                    <div class="bottom-link-wrapper">
+                        <a href="newsletter.html">News Letter </a>
+                    </div>
+                    <div class="bottom-link-wrapper">
+                        <a href="contact.html">Contact Us</a>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Chat Box -->
+        <section class="contain">
+            <button class="open-button" onclick="openform()">Chat</button>
+            <div class="chat-popup" id="myform">
+                <form action="" class="form-container">
+                    <h1 style="font-size: large; text-align: center;">Chat</h1>
+                    <label for="msg"><b>Message</b></label>
+                    <textarea placeholder="Type message here.." name="msg" required id="" cols="1" rows="10"></textarea>
+                    <button type="submit" class="btn">Send</button>
+                    <button type="button" class="btn-cancel" onclick="closeform()">Close</button>
+                </form>
+            </div>
+        </section>
+        </div>
+        
+    </body>
+    <!-- chat script -->
+    <script>
+        function openform(){
+            document.getElementById("myform").style.display="block";
+        }
+        function closeform(){
+            document.getElementById("myform").style.display="none";
+        }
+    </script>
+</html>
